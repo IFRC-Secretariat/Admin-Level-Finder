@@ -25,4 +25,4 @@ python -m pip install .
 
 The following is an example of how to use the package to get the details of a point, including admin 1 and admin 2 levels (from GADM).
 
-https://github.com/IFRC-Secretariat/Admin-Level-Finder/blob/3a4b6d6f1bde431c68118dbcc9f3d39d4dabcf3f/examples/find_point.py#L1-L26
+https://github.com/IFRC-Secretariat/Admin-Levels-Finder/blob/23efb3818519e5a027fbae784d6e6b4388cec352/examples/find_point.py#L1-L26
