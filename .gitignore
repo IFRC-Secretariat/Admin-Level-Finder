@@ -1,1 +1,14 @@
-venv
+# Ignore credential files and the virtual environment
+.env
+venv/
+
+# Ignore generated files
+*.egg-info/
+build/
+
+# Ignore pycache
+__pycache__/
+*.pyc
+
+# Ignore the results files
+*.csv
