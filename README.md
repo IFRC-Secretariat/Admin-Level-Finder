@@ -10,8 +10,8 @@ To use the project, clone the repository from Github, and install the package as
 
 ```bash
 # Clone the repository
-git clone git@github.com:IFRC-Secretariat/Admin-Level-Finder.git
-cd Admin-Level-Finder
+git clone git@github.com:IFRC-Secretariat/Admin-Levels-Finder.git
+cd Admin-Levels-Finder
 
 # Install packages from the requirements file
 python3 -m pip install -r requirements.txt
