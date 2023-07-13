@@ -21,9 +21,11 @@ class AdminLevelsFinder:
         crs : string (required)
             The coordinate reference system that the coordinates will be provided in, e.g. the CRS of Google Maps is 'EPSG:4326'.
         """
-        # Get the GADM data
+        # Get the GADM data in the provided CRS
         self.iso3 = iso3
-        self.admin_data = GADMDatasets().get_admin2_data(iso3=iso3).to_crs(crs)
+        self.admin_data = GADMDatasets()\
+                          .get_admin2_data(iso3=iso3)\
+                          .to_crs(crs)
 
 
     def find(self, *args, errors='ignore'):
@@ -48,4 +50,4 @@ class AdminLevelsFinder:
             
         # Raise an error if required
         if errors=='raise':
-            raise ValueError(f'Point not found in GADM admin levels data for {self.iso3}.')
+            raise ValueError(f'Point {args} not found in GADM admin levels data for {self.iso3}.')
